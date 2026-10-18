@@ -30,5 +30,60 @@ namespace Chuong6_LTTQ_LMS
         {
 
         }
+
+        private void mnuHangHoa_Click(object sender, EventArgs e)
+        {
+            frmSanPham frm = new frmSanPham();
+            frm.MdiParent = this;
+            frm.Show();
+            frm.Dock = DockStyle.Fill;
+
+        }
+
+        private void mnuChatLieu_Click(object sender, EventArgs e)
+        {
+            frmChatLieu frm = new frmChatLieu();
+            frm.MdiParent = this;
+            frm.Show();
+            frm.Dock = DockStyle.Fill;
+
+        }
+
+        private void mnuNhanVien_Click(object sender, EventArgs e)
+        {
+            frmNhanVien frm = new frmNhanVien();
+            frm.MdiParent = this;
+            frm.Show();
+            frm.Dock = DockStyle.Fill;
+        }
+
+        private void mnuKhachHang_Click(object sender, EventArgs e)
+        {
+            frmKhachHang frm = new frmKhachHang();
+            frm.MdiParent = this;
+            frm.Show();
+            frm.Dock = DockStyle.Fill;
+        }
+
+        private void mnuHoaDon_Click(object sender, EventArgs e)
+        {
+            frmHDBan frm = new frmHDBan();
+            frm.MdiParent = this;
+            frm.Show();
+            frm.Dock = DockStyle.Fill;
+        }
+
+        private void mnuTimKiem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void mnuBaoCao_Click(object sender, EventArgs e)
+        {
+            frmDoanhThu frm = new frmDoanhThu();
+            frm.MdiParent = this;
+            frm.Show();
+            frm.Dock = DockStyle.Fill;
+        }
     }
 }
