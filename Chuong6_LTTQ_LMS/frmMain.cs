@@ -85,10 +85,13 @@ namespace Chuong6_LTTQ_LMS
             frm.Show();
             frm.Dock = DockStyle.Fill;
         }
+<<<<<<< HEAD
 
         private void mnuThoat_Click(object sender, EventArgs e)
         {
             this.Close();
         }
+=======
+>>>>>>> 81ad412ca987ace62aa1c642a0bf8ec0abdb25bc
     }
 }
