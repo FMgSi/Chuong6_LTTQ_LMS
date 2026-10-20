@@ -11,7 +11,7 @@ namespace Chuong6_LTTQ_LMS.Classes
 {
     internal class DataProcesser
     {
-        string strConnect = "Data Source=localhost;Initial Catalog=QLBH;User Id=sa;Password=Batrung1002161@;TrustServerCertificate=true";
+        string strConnect = "Data Source=localhost;Initial Catalog=QLBanHang;User Id=sa;Password=YourStrongPass123!;TrustServerCertificate=true";
         SqlConnection sqlConnection = null;
 
         //Ham mo ket noi

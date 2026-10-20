@@ -149,9 +149,8 @@ namespace Chuong6_LTTQ_LMS.DanhMuc
                 }
                 string[] birth = mtbBirthday.Text.Split('/');
                 string NgaySinh = birth[2] + "-" + birth[1] + "-" + birth[0];
-                string strUpdate = "update tblNhanVien set MaNhanVien = '" + txtMaNhanVien.Text
-                    + "', TenNhanVien=N'" + txtTenNhanVien.Text + "', Gioitinh = N'" + GioiTinh + "', DiaChi = N'"
-                    + txtDiaChi.Text + "', DienThoai = '" + txtDienThoai.Text + "', NgaySinh='" + NgaySinh + "'";
+                string strUpdate = "update tblNhanVien set TenNhanVien=N'" + txtTenNhanVien.Text + "', Gioitinh = N'" + GioiTinh + "', DiaChi = N'"
+                    + txtDiaChi.Text + "', DienThoai = '" + txtDienThoai.Text + "', NgaySinh='" + NgaySinh + "' where MaNhanVien = '" + txtMaNhanVien.Text + "'";
                 dtBase.CapNhatDuLieu(strUpdate);
             }
 
