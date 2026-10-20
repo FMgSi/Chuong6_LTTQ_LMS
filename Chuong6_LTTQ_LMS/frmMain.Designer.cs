@@ -1,4 +1,4 @@
-﻿namespace Chuong6_LTTQ_LMS
+namespace Chuong6_LTTQ_LMS
 {
     partial class frmMain
     {
@@ -74,44 +74,28 @@
             // mnuChatLieu
             // 
             this.mnuChatLieu.Name = "mnuChatLieu";
-<<<<<<< HEAD
-            this.mnuChatLieu.Size = new System.Drawing.Size(137, 22);
-=======
             this.mnuChatLieu.Size = new System.Drawing.Size(180, 22);
->>>>>>> 81ad412ca987ace62aa1c642a0bf8ec0abdb25bc
             this.mnuChatLieu.Text = "Chat lieu";
             this.mnuChatLieu.Click += new System.EventHandler(this.mnuChatLieu_Click);
             // 
             // mnuNhanVien
             // 
             this.mnuNhanVien.Name = "mnuNhanVien";
-<<<<<<< HEAD
-            this.mnuNhanVien.Size = new System.Drawing.Size(137, 22);
-=======
             this.mnuNhanVien.Size = new System.Drawing.Size(180, 22);
->>>>>>> 81ad412ca987ace62aa1c642a0bf8ec0abdb25bc
             this.mnuNhanVien.Text = "Nhan vien";
             this.mnuNhanVien.Click += new System.EventHandler(this.mnuNhanVien_Click);
             // 
             // mnuKhachHang
             // 
             this.mnuKhachHang.Name = "mnuKhachHang";
-<<<<<<< HEAD
-            this.mnuKhachHang.Size = new System.Drawing.Size(137, 22);
-=======
             this.mnuKhachHang.Size = new System.Drawing.Size(180, 22);
->>>>>>> 81ad412ca987ace62aa1c642a0bf8ec0abdb25bc
             this.mnuKhachHang.Text = "Khach hang";
             this.mnuKhachHang.Click += new System.EventHandler(this.mnuKhachHang_Click);
             // 
             // mnuHangHoa
             // 
             this.mnuHangHoa.Name = "mnuHangHoa";
-<<<<<<< HEAD
-            this.mnuHangHoa.Size = new System.Drawing.Size(137, 22);
-=======
             this.mnuHangHoa.Size = new System.Drawing.Size(180, 22);
->>>>>>> 81ad412ca987ace62aa1c642a0bf8ec0abdb25bc
             this.mnuHangHoa.Text = "Hang hoa";
             this.mnuHangHoa.Click += new System.EventHandler(this.mnuHangHoa_Click);
             // 
@@ -147,10 +131,7 @@
             this.mnuThoat.Name = "mnuThoat";
             this.mnuThoat.Size = new System.Drawing.Size(50, 22);
             this.mnuThoat.Text = "Thoat";
-<<<<<<< HEAD
             this.mnuThoat.Click += new System.EventHandler(this.mnuThoat_Click);
-=======
->>>>>>> 81ad412ca987ace62aa1c642a0bf8ec0abdb25bc
             // 
             // frmMain
             // 
