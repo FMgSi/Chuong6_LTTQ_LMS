@@ -100,6 +100,7 @@
     <EmbeddedResource Include="DanhMuc\frmChatLieu.resx">
       <DependentUpon>frmChatLieu.cs</DependentUpon>
     </EmbeddedResource>
+<<<<<<< HEAD
     <EmbeddedResource Include="DanhMuc\frmKhachHang.resx">
       <DependentUpon>frmKhachHang.cs</DependentUpon>
     </EmbeddedResource>
@@ -109,6 +110,10 @@
     <EmbeddedResource Include="DanhMuc\frmSanPham.resx">
       <DependentUpon>frmSanPham.cs</DependentUpon>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+=======
+    <EmbeddedResource Include="DanhMuc\frmSanPham.resx">
+      <DependentUpon>frmSanPham.cs</DependentUpon>
+>>>>>>> 81ad412ca987ace62aa1c642a0bf8ec0abdb25bc
     </EmbeddedResource>
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>

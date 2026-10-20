@@ -208,7 +208,10 @@
             this.btnTim.TabIndex = 31;
             this.btnTim.Text = "Chat Lieu";
             this.btnTim.UseVisualStyleBackColor = true;
+<<<<<<< HEAD
             this.btnTim.Click += new System.EventHandler(this.btnTim_Click);
+=======
+>>>>>>> 81ad412ca987ace62aa1c642a0bf8ec0abdb25bc
             // 
             // cboChatLieu
             // 
@@ -223,7 +226,10 @@
             this.pictureBox1.Location = new System.Drawing.Point(521, 110);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(212, 101);
+<<<<<<< HEAD
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+=======
+>>>>>>> 81ad412ca987ace62aa1c642a0bf8ec0abdb25bc
             this.pictureBox1.TabIndex = 33;
             this.pictureBox1.TabStop = false;
             // 
@@ -312,7 +318,10 @@
             this.btnThoat.TabIndex = 43;
             this.btnThoat.Text = "Thoat";
             this.btnThoat.UseVisualStyleBackColor = true;
+<<<<<<< HEAD
             this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
+=======
+>>>>>>> 81ad412ca987ace62aa1c642a0bf8ec0abdb25bc
             // 
             // frmSanPham
             // 

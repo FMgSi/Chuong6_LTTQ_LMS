@@ -79,8 +79,12 @@ namespace Chuong6_LTTQ_LMS.DanhMuc
             pictureBox1.Image = null;
             txtGhiChu.Text = "";
             txtMaHang.Focus();
+<<<<<<< HEAD
             pictureBox1.Image = null;
             fileAnh = "";
+=======
+
+>>>>>>> 81ad412ca987ace62aa1c642a0bf8ec0abdb25bc
         }
 
         private void btnAnh_Click(object sender, EventArgs e)
@@ -148,7 +152,11 @@ namespace Chuong6_LTTQ_LMS.DanhMuc
                 }
                 string strInsert = "insert into tblHang values('" + txtMaHang.Text + "',N'" +
                     txtTenHang.Text + "','" + cboChatLieu.SelectedValue + "','" + int.Parse(txtSoLuong.Text) +
+<<<<<<< HEAD
                     "','" + float.Parse(txtDonGiaNhap.Text) + "','" + float.Parse(txtDonGiaBan.Text) +
+=======
+                    "','" + float.Parse(txtDonGiaBan.Text) + "','" + float.Parse(txtDonGiaNhap.Text) +
+>>>>>>> 81ad412ca987ace62aa1c642a0bf8ec0abdb25bc
                     "','" + fileAnh + "',N'" + txtGhiChu.Text + "')";
                 dtBase.CapNhatDuLieu(strInsert);
             }
@@ -158,8 +166,13 @@ namespace Chuong6_LTTQ_LMS.DanhMuc
                     "update tblHang set TenHang=N'" + txtTenHang.Text +
                     "', MaChatlieu='" + cboChatLieu.SelectedValue +
                     "', SoLuong=" + int.Parse(txtSoLuong.Text) +
+<<<<<<< HEAD
                     ", DonGiaNhap=" + float.Parse(txtDonGiaNhap.Text) +
                     ", DonGiaBan=" + float.Parse(txtDonGiaBan.Text) +
+=======
+                    ", DonGiaNhap=" + float.Parse(txtDonGiaBan.Text) +
+                    ", DonGiaBan=" + float.Parse(txtDonGiaNhap.Text) +
+>>>>>>> 81ad412ca987ace62aa1c642a0bf8ec0abdb25bc
                     ", Anh='" + fileAnh + "', GhiChu=N'" +
                     txtGhiChu.Text + "' where MaHang='" + txtMaHang.Text + "'";
                 dtBase.CapNhatDuLieu(sqlUpdate);
@@ -236,6 +249,7 @@ namespace Chuong6_LTTQ_LMS.DanhMuc
             btnBoQua.Enabled = false;
             btnThemMoi.Enabled = true;
         }
+<<<<<<< HEAD
 
         private void btnThoat_Click(object sender, EventArgs e)
         {
@@ -248,5 +262,7 @@ namespace Chuong6_LTTQ_LMS.DanhMuc
             frm.Show();
             frm.Dock = DockStyle.Fill;
         }
+=======
+>>>>>>> 81ad412ca987ace62aa1c642a0bf8ec0abdb25bc
     }
 }

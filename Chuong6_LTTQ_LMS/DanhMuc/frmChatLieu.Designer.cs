@@ -200,6 +200,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+<<<<<<< HEAD
             this.BackColor = System.Drawing.Color.Lime;
             this.ClientSize = new System.Drawing.Size(1264, 681);
             this.Controls.Add(this.dgvChatLieu);
@@ -207,6 +208,10 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
             this.Margin = new System.Windows.Forms.Padding(2);
+=======
+            this.ClientSize = new System.Drawing.Size(1264, 681);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+>>>>>>> 81ad412ca987ace62aa1c642a0bf8ec0abdb25bc
             this.Name = "frmChatLieu";
             this.Text = "frmChatLieu";
             this.Load += new System.EventHandler(this.frmChatLieu_Load);
