@@ -217,6 +217,7 @@ namespace Chuong6_LTTQ_LMS.DanhMuc
             this.cboChatLieu.Name = "cboChatLieu";
             this.cboChatLieu.Size = new System.Drawing.Size(124, 21);
             this.cboChatLieu.TabIndex = 32;
+            this.cboChatLieu.SelectedIndexChanged += new System.EventHandler(this.cboChatLieu_SelectedIndexChanged);
             // 
             // pictureBox1
             // 

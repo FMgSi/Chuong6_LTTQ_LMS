@@ -12,6 +12,8 @@ namespace Chuong6_LTTQ_LMS.HoaDon
 {
     public partial class frmHDBan : Form
     {
+        Classes.DataProcesser dtBase = new Classes.DataProcesser();
+        Classes.Function ft = new Classes.Function();
         public frmHDBan()
         {
             InitializeComponent();
@@ -24,20 +26,18 @@ namespace Chuong6_LTTQ_LMS.HoaDon
 
         private void frmHDBan_Load(object sender, EventArgs e)
         {
-            Classes.DataProcesser dtBase = new Classes.DataProcesser();
-            Classes.Function ft = new Classes.Function();
 
-            ft.FillComBox(cbMaNhanVien, dtBase.DocBang("select * from tblNhanVien"), "MaNhanVien", "TenNhanVien");
+            ft.FillComBox(cbMaNhanVien, dtBase.DocBang("select * from tblNhanVien"), "MaNhanVien", "MaNhanVien");
             cbMaNhanVien.SelectedIndex = -1;
 
-            ft.FillComBox(cbMaHang, dtBase.DocBang("select * from tblHang"), "Mahang", "Tenhang");
+            ft.FillComBox(cbMaHang, dtBase.DocBang("select * from tblHang"), "Mahang", "Mahang");
             cbMaHang.SelectedIndex = -1;
 
             ft.FillComBox(cbMaHoaDon, dtBase.DocBang("select * from tblHDBan"), "MaHDBan", "MaHDBan");
             cbMaHoaDon.SelectedIndex = -1;
 
-            ft.FillComBox(cbMaKhachHang, dtBase.DocBang("select * from tblKhach"), "Makhach", "Tenkhach");
-            cbMaKhachHang.SelectedIndex = -1;
+            ft.FillComBox(cbMaKhachHang, dtBase.DocBang("select * from tblKhach"), "Makhach", "Makhach");
+            cbMaKhachHang.SelectedIndex = -1;            
 
             dgvHoaDon.DataSource = dtBase.DocBang(
                 "select " +
@@ -63,5 +63,57 @@ namespace Chuong6_LTTQ_LMS.HoaDon
             btnInHoaDon.Enabled = false;
             btnThoat.Enabled = true;
         }
+
+        private void btnThemHoaDon_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dgvHoaDon_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            btnThemHoaDon.Enabled = false;
+            btnLuuHoaDon.Enabled = true;
+            btnInHoaDon.Enabled = true;
+            btnHuyHoaDon.Enabled = true;
+
+
+        }
+
+        private void cbMaNhanVien_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cbMaNhanVien.SelectedIndex != -1 && cbMaNhanVien.Text != "")
+            {
+                DataTable dtNhanVien = dtBase.DocBang("select TenNhanVien from tblNhanvien where MaNhanVien = '" + cbMaNhanVien.Text + "'");
+                if (dtNhanVien.Rows.Count > 0)
+                    txtTenNhanVien.Text = dtNhanVien.Rows[0]["TenNhanVien"].ToString();
+            }
+            else
+            {
+                txtTenNhanVien.Text = "";
+            }
+
+        }
+
+        private void cbMaKhachHang_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cbMaKhachHang.SelectedIndex != -1 && cbMaKhachHang.Text != "")
+            {
+                DataTable dtKhach = dtBase.DocBang("select TenKhach, Diachi, DienThoai from tblKhach where Makhach = '" + cbMaKhachHang.Text + "'");
+                if (dtKhach.Rows.Count > 0)
+                {
+                    txtTenKhachHang.Text = dtKhach.Rows[0]["Tenkhach"].ToString();
+                    txtDiaChi.Text = dtKhach.Rows[0]["Diachi"].ToString();
+                    txtDienThoai.Text = dtKhach.Rows[0]["Dienthoai"].ToString();
+                }
+            }
+            else
+            {
+                txtTenKhachHang.Text = "";
+                txtDienThoai.Text = "";
+                txtDiaChi.Text = "";
+            }
+        }
+
+
     }
 }

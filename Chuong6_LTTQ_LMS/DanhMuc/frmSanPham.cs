@@ -246,5 +246,10 @@ namespace Chuong6_LTTQ_LMS.DanhMuc
             frm.Show();
             frm.Dock = DockStyle.Fill;
         }
+
+        private void cboChatLieu_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
