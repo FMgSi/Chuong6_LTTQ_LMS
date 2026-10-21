@@ -69,16 +69,6 @@ namespace Chuong6_LTTQ_LMS.HoaDon
 
         }
 
-        private void dgvHoaDon_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            btnThemHoaDon.Enabled = false;
-            btnLuuHoaDon.Enabled = true;
-            btnInHoaDon.Enabled = true;
-            btnHuyHoaDon.Enabled = true;
-
-
-        }
-
         private void cbMaNhanVien_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (cbMaNhanVien.SelectedIndex != -1 && cbMaNhanVien.Text != "")
@@ -114,6 +104,22 @@ namespace Chuong6_LTTQ_LMS.HoaDon
             }
         }
 
+        private void dgvHoaDon_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            btnThemHoaDon.Enabled = false;
+            btnLuuHoaDon.Enabled = true;
+            btnInHoaDon.Enabled = true;
+            btnHuyHoaDon.Enabled = true;
 
+            cbMaHang.SelectedValue = dgvHoaDon.CurrentRow.Cells[0].Value.ToString();
+            txtTenHang.Text = dgvHoaDon.CurrentRow.Cells[1].Value.ToString();
+            txtSoLuong.Text = dgvHoaDon.CurrentRow.Cells[2].Value.ToString();
+            txtDonGia.Text = dgvHoaDon.CurrentRow.Cells[3].Value.ToString();
+            txtGiamGia.Text = dgvHoaDon.CurrentRow.Cells[4].Value.ToString();
+            txtThanhTien.Text = dgvHoaDon.CurrentRow.Cells[5].Value.ToString();
+
+
+
+        }
     }
 }
