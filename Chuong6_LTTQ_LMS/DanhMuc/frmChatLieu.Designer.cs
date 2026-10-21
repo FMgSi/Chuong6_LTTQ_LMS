@@ -42,6 +42,7 @@ namespace Chuong6_LTTQ_LMS.DanhMuc
             this.btnSua = new System.Windows.Forms.Button();
             this.btnThem = new System.Windows.Forms.Button();
             this.dgvChatLieu = new System.Windows.Forms.DataGridView();
+            this.lbXinChao = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvChatLieu)).BeginInit();
@@ -196,12 +197,23 @@ namespace Chuong6_LTTQ_LMS.DanhMuc
             this.dgvChatLieu.TabIndex = 3;
             this.dgvChatLieu.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvChatLieu_CellClick);
             // 
+            // lbXinChao
+            // 
+            this.lbXinChao.AutoSize = true;
+            this.lbXinChao.Location = new System.Drawing.Point(824, 31);
+            this.lbXinChao.Name = "lbXinChao";
+            this.lbXinChao.Size = new System.Drawing.Size(35, 13);
+            this.lbXinChao.TabIndex = 4;
+            this.lbXinChao.Text = "label4";
+            this.lbXinChao.Click += new System.EventHandler(this.lbXinChao_Click);
+            // 
             // frmChatLieu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.Lime;
             this.ClientSize = new System.Drawing.Size(1264, 681);
+            this.Controls.Add(this.lbXinChao);
             this.Controls.Add(this.dgvChatLieu);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
@@ -235,5 +247,6 @@ namespace Chuong6_LTTQ_LMS.DanhMuc
         private System.Windows.Forms.Button btnBoQua;
         private System.Windows.Forms.Button btnSua;
         private System.Windows.Forms.Button btnThem;
+        private System.Windows.Forms.Label lbXinChao;
     }
 }

@@ -23,6 +23,9 @@ namespace Chuong6_LTTQ_LMS.DanhMuc
 
         private void frmSanPham_Load(object sender, EventArgs e)
         {
+            frmDangNhap frm = new frmDangNhap();
+            frm.ShowDialog();
+
             //Lay du lieu cua bang chat lieu do vao cboChatLieu
             DataTable dtChatLieu = dtBase.DocBang("select * from tblChatLieu");
             ft.FillComBox(cboChatLieu, dtChatLieu, "TenChatLieu", "MaChatLieu");

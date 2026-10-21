@@ -12,6 +12,9 @@ namespace Chuong6_LTTQ_LMS.DanhMuc
 {
     public partial class frmChatLieu : Form
     {
+
+        public static string userName = "";
+        
         Classes.Function ft = new Classes.Function();
         Classes.DataProcesser dtBase = new Classes.DataProcesser();
         public frmChatLieu()
@@ -21,6 +24,11 @@ namespace Chuong6_LTTQ_LMS.DanhMuc
 
         private void frmChatLieu_Load(object sender, EventArgs e)
         {
+            frmDangNhap frm = new frmDangNhap();
+            frm.ShowDialog();
+
+            lbXinChao.Text = "Xin chao: " + userName;
+            
             DataTable dtChatLieu = dtBase.DocBang("select * from tblChatLieu");
             dgvChatLieu.DataSource = dtChatLieu;
 
@@ -154,6 +162,11 @@ namespace Chuong6_LTTQ_LMS.DanhMuc
             btnXoa.Enabled = false;
             btnBoQua.Enabled = false;
             btnThem.Enabled = true;
+        }
+
+        private void lbXinChao_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
